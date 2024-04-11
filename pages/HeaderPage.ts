@@ -9,11 +9,11 @@ export class HeaderPage {
     this.logoutBtn = page.getByRole('button', { name: 'Logout' });
   }
 
-  getHomeBtn(): Locator {
+  async getHomeBtn(): Promise<Locator> {
     return this.homeBtn;
   }
 
-  getLogoutBtn(): Locator {
+  async getLogoutBtn(): Promise<Locator> {
     return this.logoutBtn;
   }
 }

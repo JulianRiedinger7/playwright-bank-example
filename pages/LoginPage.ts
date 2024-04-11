@@ -14,6 +14,6 @@ export class LoginPage {
   }
 
   async clickLoginBtn() {
-    this.loginBtn.click();
+    await this.loginBtn.click();
   }
 }
