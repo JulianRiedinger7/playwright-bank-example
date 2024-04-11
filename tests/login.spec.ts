@@ -8,7 +8,7 @@ test.describe('Login Tests', () => {
   let homePage: HomePage;
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login');
+    await page.goto('');
     homePage = new HomePage(page);
     await homePage.clickCustomerLoginBtn();
   });

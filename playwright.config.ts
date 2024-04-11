@@ -28,6 +28,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    baseURL: 'https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login',
   },
 
   /* Configure projects for major browsers */
