@@ -13,7 +13,11 @@ export class HeaderPage {
     return this.homeBtn;
   }
 
-  async getLogoutBtn(): Promise<Locator> {
-    return this.logoutBtn;
+  async isLogoutVisible(): Promise<Boolean> {
+    return this.logoutBtn.isVisible();
+  }
+
+  async clickLogoutBtn() {
+    await this.logoutBtn.click();
   }
 }

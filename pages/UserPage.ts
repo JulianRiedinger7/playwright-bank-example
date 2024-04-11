@@ -7,7 +7,7 @@ export class UserPage {
     this.userWelcome = page.locator('strong > span');
   }
 
-  getUserWelcome(): Locator {
-    return this.userWelcome;
+  async getUserWelcomeText(): Promise<String | null> {
+    return this.userWelcome.textContent();
   }
 }

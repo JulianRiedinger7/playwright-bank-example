@@ -16,4 +16,8 @@ export class LoginPage {
   async clickLoginBtn() {
     await this.loginBtn.click();
   }
+
+  async isSelectVisible(): Promise<Boolean> {
+    return this.nameSelect.isVisible();
+  }
 }
