@@ -13,7 +13,7 @@ test.describe('Login Tests', () => {
     await homePage.clickCustomerLoginBtn();
   });
 
-  test('User should login and logout correctly with valid name', async ({ page }) => {
+  test('Customer should login and logout correctly with valid name', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const name: string = 'Hermoine Granger';
 
