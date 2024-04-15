@@ -10,7 +10,7 @@ export class LoginPage {
   }
 
   async selectNameOption(name: string) {
-    await this.nameSelect.selectOption(name);
+    await this.nameSelect.selectOption({ label: name });
   }
 
   async clickLoginBtn() {
